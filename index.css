@@ -1,0 +1,91 @@
+body {margin: 0; box-sizing: border-box; padding: 0;}
+
+/* .container {
+  height: 100vh;
+}
+
+.header-container {
+  height: 10vh;
+  background-color: rgb(84, 8, 154);
+  padding: 10px;
+}
+.header-container p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 10vh;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+}
+
+.left-menubar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(81, 81, 243);
+  flex: 2;
+  height: 80vh;
+  color: white;
+  padding-left: 20px;
+}
+
+.left-menubar div {
+  margin: 10px;
+}
+
+.main {
+  display: flex;
+  flex: 7;
+  height: 80vh;
+  margin-right: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.main div {
+  height: 33vh;
+  box-shadow: 1px 2px 1px 1px rgb(226, 223, 223);
+  flex-basis: calc(33.33% - 20px);
+  padding: 5px;
+  font-size: small;
+}
+
+.footer-container {
+  height: 5vh;
+  text-align: center;
+  background-color: rgb(238, 234, 234);
+  padding: 1rem;
+}
+.footer-container h3 {
+  margin: 0;
+  line-height: 5vh;
+} */
+
+.container {
+  height: 40%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(10rem, auto);
+}
+
+.container div:nth-child(odd) {
+  background-color: yellow;
+  border: 1px solid black;
+}
+.container div:nth-child(even) {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.container div:nth-child(1) {
+  grid-column: 1/4;
+}
+
+.container div:nth-child(2) {
+  grid-row: 2/4;
+}
